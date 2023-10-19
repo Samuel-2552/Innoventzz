@@ -1,0 +1,35 @@
+.main__button {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 0.5px solid var(--primary-color);
+    outline: none;
+    transition: 1s ease-in-out;
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: var(--accent-color);
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.main__button:hover {
+    transition: 1s ease-in-out;
+}
+
+.main__button:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.main__button span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
